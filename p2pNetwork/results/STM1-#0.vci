@@ -1,0 +1,51 @@
+file 725970 1778236090                                          
+version 3
+run STM1-0-20260508-12:27:30-11660
+attr configname STM1
+attr datetime 20260508-12:27:30
+attr datetimef 20260508-122730
+attr experiment STM1
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network p2pNetwork
+attr processid 11660
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config debug-on-errors true
+config image-path ../../../../../images
+config *.lteA.stmLevel 1
+config *.lteB.stmLevel 1
+config *.lteA.numTributaries 1
+config *.lteB.numTributaries 1
+config **.packetSize 2430
+config **.packetInterval "41.62 us"
+config network p2pNetwork
+config sim-time-limit 1s
+
+vector 0 p2pNetwork.lteA stmWorkingSent:vector ETV
+attr recordingmode vector
+attr source stmWorkingSent
+attr title "STM sent on working line"
+vector 1 p2pNetwork.lteB stmWorkingSent:vector ETV
+attr recordingmode vector
+attr source stmWorkingSent
+attr title "STM sent on working line"
+vector 2 p2pNetwork.lteB stmWorkingReceived:vector ETV
+attr recordingmode vector
+attr source stmWorkingReceived
+attr title "STM received on working line"
+vector 3 p2pNetwork.lteA stmWorkingReceived:vector ETV
+attr recordingmode vector
+attr source stmWorkingReceived
+attr title "STM received on working line"
+0	1332 177615 13 144099 0.000125 1 8000 1 8000 32004000 170698668000
+1	178947 177615 14 144100 0.000125 1 8000 1 8000 32004000 170698668000
+2	356562 184703 15 144083 0.000127 0.999877 7999 1 7999 31996000 170634668000
+3	541265 184703 16 144084 0.000127 0.999877 7999 1 7999 31996000 170634668000
+
