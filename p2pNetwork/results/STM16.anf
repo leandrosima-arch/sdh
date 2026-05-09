@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <analysis version="2">
-    <inputs/>
+    <inputs>
+        <input pattern="STM16-#0.sca"/>
+    </inputs>
     <charts/>
 </analysis>

@@ -1,8 +1,8 @@
 version 3
-run STM4-0-20260508-12:30:56-9412
+run STM4-0-20260509-18:54:03-15304
 attr configname STM4
-attr datetime 20260508-12:30:56
-attr datetimef 20260508-123056
+attr datetime 20260509-18:54:03
+attr datetimef 20260509-185403
 attr experiment STM4
 attr inifile omnetpp.ini
 attr iterationvars ""
@@ -10,7 +10,7 @@ attr iterationvarsd ""
 attr iterationvarsf ""
 attr measurement ""
 attr network p2pNetwork
-attr processid 9412
+attr processid 15304
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -18,8 +18,8 @@ attr runnumber 0
 attr seedset 0
 config debug-on-errors true
 config image-path ../../../../../images
-config *.lteA.stmLevel 1
-config *.lteB.stmLevel 1
+config *.lteA.stmLevel 4
+config *.lteB.stmLevel 4
 config *.lteA.numTributaries 1
 config *.lteB.numTributaries 1
 config **.packetSize 9720
@@ -33,7 +33,7 @@ attr mutable ""
 par p2pNetwork.lteA.lineOut[0].channel delay 2e-06s
 attr mutable ""
 attr unit s
-par p2pNetwork.lteA.lineOut[0].channel datarate 1.5552e+08bps
+par p2pNetwork.lteA.lineOut[0].channel datarate 6.2208e+08bps
 attr mutable ""
 attr unit bps
 par p2pNetwork.lteA.lineOut[0].channel ber 0
@@ -46,7 +46,7 @@ attr mutable ""
 par p2pNetwork.lteA.lineOut[1].channel delay 2e-06s
 attr mutable ""
 attr unit s
-par p2pNetwork.lteA.lineOut[1].channel datarate 1.5552e+08bps
+par p2pNetwork.lteA.lineOut[1].channel datarate 6.2208e+08bps
 attr mutable ""
 attr unit bps
 par p2pNetwork.lteA.lineOut[1].channel ber 0
@@ -59,7 +59,7 @@ attr mutable ""
 par p2pNetwork.lteB.lineOut[0].channel delay 2e-06s
 attr mutable ""
 attr unit s
-par p2pNetwork.lteB.lineOut[0].channel datarate 1.5552e+08bps
+par p2pNetwork.lteB.lineOut[0].channel datarate 6.2208e+08bps
 attr mutable ""
 attr unit bps
 par p2pNetwork.lteB.lineOut[0].channel ber 0
@@ -72,7 +72,7 @@ attr mutable ""
 par p2pNetwork.lteB.lineOut[1].channel delay 2e-06s
 attr mutable ""
 attr unit s
-par p2pNetwork.lteB.lineOut[1].channel datarate 1.5552e+08bps
+par p2pNetwork.lteB.lineOut[1].channel datarate 6.2208e+08bps
 attr mutable ""
 attr unit bps
 par p2pNetwork.lteB.lineOut[1].channel ber 0
@@ -85,12 +85,12 @@ attr unit s
 par p2pNetwork.sourceA packetSize 9720
 par p2pNetwork.sinkA typename "\"inet.node.sdh.PDHSink\""
 par p2pNetwork.lteA typename "\"inet.node.sdh.SDHLTE\""
-par p2pNetwork.lteA stmLevel 1
+par p2pNetwork.lteA stmLevel 4
 par p2pNetwork.lteA numTributaries 1
 par p2pNetwork.lteA useProtection false
 par p2pNetwork.lteA protectionSwitchTime -1s
 attr unit s
-scalar p2pNetwork.lteA stmloadSTM:last nan
+scalar p2pNetwork.lteA stmloadSTM:last 1
 attr recordingmode last
 attr source stmloadSTM
 attr title "STM load vector, last"
@@ -111,12 +111,12 @@ attr recordingmode last
 attr source stmWorkingSent
 attr title "STM sent on working line, last"
 par p2pNetwork.lteB typename "\"inet.node.sdh.SDHLTE\""
-par p2pNetwork.lteB stmLevel 1
+par p2pNetwork.lteB stmLevel 4
 par p2pNetwork.lteB numTributaries 1
 par p2pNetwork.lteB useProtection false
 par p2pNetwork.lteB protectionSwitchTime -1s
 attr unit s
-scalar p2pNetwork.lteB stmloadSTM:last nan
+scalar p2pNetwork.lteB stmloadSTM:last 1
 attr recordingmode last
 attr source stmloadSTM
 attr title "STM load vector, last"

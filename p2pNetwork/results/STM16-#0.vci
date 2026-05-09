@@ -1,9 +1,9 @@
-file 723241 1778236349                                          
+file 1031403 1778339567                                         
 version 3
-run STM16-0-20260508-12:32:22-13656
+run STM16-0-20260509-17:11:35-15588
 attr configname STM16
-attr datetime 20260508-12:32:22
-attr datetimef 20260508-123222
+attr datetime 20260509-17:11:35
+attr datetimef 20260509-171135
 attr experiment STM16
 attr inifile omnetpp.ini
 attr iterationvars ""
@@ -11,7 +11,7 @@ attr iterationvarsd ""
 attr iterationvarsf ""
 attr measurement ""
 attr network p2pNetwork
-attr processid 13656
+attr processid 15588
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -37,24 +37,34 @@ config *.sourceA.packetSize 3000
 config network p2pNetwork
 config sim-time-limit 1s
 
-vector 0 p2pNetwork.lteA stmWorkingSent:vector ETV
+vector 0 p2pNetwork.lteA stmloadSTM:vector ETV
+attr recordingmode vector
+attr source stmloadSTM
+attr title "STM load vector"
+vector 1 p2pNetwork.lteA stmWorkingSent:vector ETV
 attr recordingmode vector
 attr source stmWorkingSent
 attr title "STM sent on working line"
-vector 1 p2pNetwork.lteB stmWorkingSent:vector ETV
+vector 2 p2pNetwork.lteB stmloadSTM:vector ETV
+attr recordingmode vector
+attr source stmloadSTM
+attr title "STM load vector"
+vector 3 p2pNetwork.lteB stmWorkingSent:vector ETV
 attr recordingmode vector
 attr source stmWorkingSent
 attr title "STM sent on working line"
-vector 2 p2pNetwork.lteB stmWorkingReceived:vector ETV
+vector 4 p2pNetwork.lteB stmWorkingReceived:vector ETV
 attr recordingmode vector
 attr source stmWorkingReceived
 attr title "STM received on working line"
-vector 3 p2pNetwork.lteA stmWorkingReceived:vector ETV
+vector 5 p2pNetwork.lteA stmWorkingReceived:vector ETV
 attr recordingmode vector
 attr source stmWorkingReceived
 attr title "STM received on working line"
-0	1683 176845 13 128101 0.000125 1 8000 1 8000 32004000 170698668000
-1	178528 176845 14 128102 0.000125 1 8000 1 8000 32004000 170698668000
-2	355373 183933 15 128087 0.000127 0.999877 7999 1 7999 31996000 170634668000
-3	539306 183933 16 128088 0.000127 0.999877 7999 1 7999 31996000 170634668000
+0	1941 153952 13 128101 0.000125 1 8000 0 0 0 0
+1	155893 176845 13 128101 0.000125 1 8000 1 8000 32004000 170698668000
+2	332738 153952 14 128102 0.000125 1 8000 0 0 0 0
+3	486690 176845 14 128102 0.000125 1 8000 1 8000 32004000 170698668000
+4	663535 183933 15 128087 0.000127 0.999877 7999 1 7999 31996000 170634668000
+5	847468 183933 16 128088 0.000127 0.999877 7999 1 7999 31996000 170634668000
 

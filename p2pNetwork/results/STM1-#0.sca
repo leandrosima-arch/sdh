@@ -1,8 +1,8 @@
 version 3
-run STM1-0-20260508-12:27:30-11660
+run STM1-0-20260509-18:51:31-15304
 attr configname STM1
-attr datetime 20260508-12:27:30
-attr datetimef 20260508-122730
+attr datetime 20260509-18:51:31
+attr datetimef 20260509-185131
 attr experiment STM1
 attr inifile omnetpp.ini
 attr iterationvars ""
@@ -10,7 +10,7 @@ attr iterationvarsd ""
 attr iterationvarsf ""
 attr measurement ""
 attr network p2pNetwork
-attr processid 11660
+attr processid 15304
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -90,7 +90,7 @@ par p2pNetwork.lteA numTributaries 1
 par p2pNetwork.lteA useProtection false
 par p2pNetwork.lteA protectionSwitchTime -1s
 attr unit s
-scalar p2pNetwork.lteA stmloadSTM:last nan
+scalar p2pNetwork.lteA stmloadSTM:last 1
 attr recordingmode last
 attr source stmloadSTM
 attr title "STM load vector, last"
@@ -116,7 +116,7 @@ par p2pNetwork.lteB numTributaries 1
 par p2pNetwork.lteB useProtection false
 par p2pNetwork.lteB protectionSwitchTime -1s
 attr unit s
-scalar p2pNetwork.lteB stmloadSTM:last nan
+scalar p2pNetwork.lteB stmloadSTM:last 1
 attr recordingmode last
 attr source stmloadSTM
 attr title "STM load vector, last"

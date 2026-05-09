@@ -19,6 +19,8 @@ void SDHLTE::initialize() {
     protectionSignalTx = registerSignal("stmProtectionSent");
     workingSignalRx = registerSignal("stmWorkingReceived");
     protectionSignalRx = registerSignal("stmProtectionReceived");
+    stmloadSTMSignal = registerSignal("stmloadSTM");
+
 
     double bitrate = 155.52e6 * stmLevel;  // STM-n velocidad
     for (int i = 0; i < gateSize("lineOut"); ++i) {
@@ -95,6 +97,7 @@ void SDHLTE::handleMessage(cMessage *msg) {
 
             // Color según carga
             double loadRatio = (double)usedBytes / maxBytes;
+            emit(stmloadSTMSignal, loadRatio);
 
             bool useProtectionNow = useProtection && (protectionSwitchTime >= 0 && simTime() >= protectionSwitchTime);
 
