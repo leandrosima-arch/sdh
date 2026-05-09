@@ -10,7 +10,14 @@ simple SDHADM
     parameters:
         int stmLevel = default(1);             // STM-n level (1, 4, 16...)
         int numTributaries = default(1);       // Número de tributarios PDH
-        bool allowMixedInsertion = default(false);        
+        bool allowMixedInsertion = default(false); 
+        @signal[stmForwarded](type="long");
+        @signal[pdhReceived](type="long");
+        @signal[pdhTransmitted](type="long");
+        
+        @statistic[stmForwarded](title="STM frames forwarded"; source=stmForwarded; record=vector,count);
+        @statistic[pdhReceived](title="PDH packets from tributary"; source=pdhReceived; record=vector,count);
+        @statistic[pdhTransmitted](title="PDH packets to tributary"; source=pdhTransmitted; record=vector,count);       
         @display("i=block/routing");
         @class(SDHADM);
     gates:
