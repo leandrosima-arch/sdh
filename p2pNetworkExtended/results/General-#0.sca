@@ -1,0 +1,160 @@
+version 3
+run General-0-20260509-23:29:05-12892
+attr configname General
+attr datetime 20260509-23:29:05
+attr datetimef 20260509-232905
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network p2pNetworkExtended
+attr processid 12892
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../../../../images
+config network p2pNetworkExtended
+config sim-time-limit 1s
+config *.visualizer.*.enabled true
+config *.visualizer.*.animationSpeed 20
+config **.scalar-recording true
+config **.vector-recording true
+config **.lte*.stmWorkingReceived.record vector
+config **.lte*.stmProtectionReceived.record vector
+config *.lte*.stmLevel 16
+config *.lte*.numTributaries 2
+config *.lte*.useProtection true
+config *.lte*.protectionSwitchTime 0.5s
+config *.source*.packetInterval 50us
+config *.source*.packetSize 3000
+
+par p2pNetworkExtended.lteA.lineOut[0].channel typename "\"inet.node.sdh.p2pNetworkExtended.p2pNetworkExtended.FiberLine\""
+par p2pNetworkExtended.lteA.lineOut[0].channel disabled false
+attr mutable ""
+par p2pNetworkExtended.lteA.lineOut[0].channel delay 2e-06s
+attr mutable ""
+attr unit s
+par p2pNetworkExtended.lteA.lineOut[0].channel datarate 2.48832e+09bps
+attr mutable ""
+attr unit bps
+par p2pNetworkExtended.lteA.lineOut[0].channel ber 0
+attr mutable ""
+par p2pNetworkExtended.lteA.lineOut[0].channel per 0
+attr mutable ""
+par p2pNetworkExtended.lteA.lineOut[1].channel typename "\"inet.node.sdh.p2pNetworkExtended.p2pNetworkExtended.FiberLine\""
+par p2pNetworkExtended.lteA.lineOut[1].channel disabled false
+attr mutable ""
+par p2pNetworkExtended.lteA.lineOut[1].channel delay 2e-06s
+attr mutable ""
+attr unit s
+par p2pNetworkExtended.lteA.lineOut[1].channel datarate 2.48832e+09bps
+attr mutable ""
+attr unit bps
+par p2pNetworkExtended.lteA.lineOut[1].channel ber 0
+attr mutable ""
+par p2pNetworkExtended.lteA.lineOut[1].channel per 0
+attr mutable ""
+par p2pNetworkExtended.lteB.lineOut[0].channel typename "\"inet.node.sdh.p2pNetworkExtended.p2pNetworkExtended.FiberLine\""
+par p2pNetworkExtended.lteB.lineOut[0].channel disabled false
+attr mutable ""
+par p2pNetworkExtended.lteB.lineOut[0].channel delay 2e-06s
+attr mutable ""
+attr unit s
+par p2pNetworkExtended.lteB.lineOut[0].channel datarate 2.48832e+09bps
+attr mutable ""
+attr unit bps
+par p2pNetworkExtended.lteB.lineOut[0].channel ber 0
+attr mutable ""
+par p2pNetworkExtended.lteB.lineOut[0].channel per 0
+attr mutable ""
+par p2pNetworkExtended.lteB.lineOut[1].channel typename "\"inet.node.sdh.p2pNetworkExtended.p2pNetworkExtended.FiberLine\""
+par p2pNetworkExtended.lteB.lineOut[1].channel disabled false
+attr mutable ""
+par p2pNetworkExtended.lteB.lineOut[1].channel delay 2e-06s
+attr mutable ""
+attr unit s
+par p2pNetworkExtended.lteB.lineOut[1].channel datarate 2.48832e+09bps
+attr mutable ""
+attr unit bps
+par p2pNetworkExtended.lteB.lineOut[1].channel ber 0
+attr mutable ""
+par p2pNetworkExtended.lteB.lineOut[1].channel per 0
+attr mutable ""
+par p2pNetworkExtended.sourceA[0] typename "\"inet.node.sdh.PDHSource\""
+par p2pNetworkExtended.sourceA[0] packetInterval 5e-05s
+attr unit s
+par p2pNetworkExtended.sourceA[0] packetSize 3000
+par p2pNetworkExtended.sourceA[1] typename "\"inet.node.sdh.PDHSource\""
+par p2pNetworkExtended.sourceA[1] packetInterval 5e-05s
+attr unit s
+par p2pNetworkExtended.sourceA[1] packetSize 3000
+par p2pNetworkExtended.sinkA[0] typename "\"inet.node.sdh.PDHSink\""
+par p2pNetworkExtended.sinkA[1] typename "\"inet.node.sdh.PDHSink\""
+par p2pNetworkExtended.lteA typename "\"inet.node.sdh.SDHLTE\""
+par p2pNetworkExtended.lteA stmLevel 16
+par p2pNetworkExtended.lteA numTributaries 2
+par p2pNetworkExtended.lteA useProtection true
+par p2pNetworkExtended.lteA protectionSwitchTime 0.5s
+attr unit s
+scalar p2pNetworkExtended.lteA stmloadSTM:last 0.30864197530864
+attr recordingmode last
+attr source stmloadSTM
+attr title "STM load vector, last"
+scalar p2pNetworkExtended.lteA stmProtectionReceived:last 4000
+attr recordingmode last
+attr source stmProtectionReceived
+attr title "STM received on protection line, last"
+scalar p2pNetworkExtended.lteA stmWorkingReceived:last 3999
+attr recordingmode last
+attr source stmWorkingReceived
+attr title "STM received on working line, last"
+scalar p2pNetworkExtended.lteA stmProtectionSent:last 4001
+attr recordingmode last
+attr source stmProtectionSent
+attr title "STM sent on protection line, last"
+scalar p2pNetworkExtended.lteA stmWorkingSent:last 3999
+attr recordingmode last
+attr source stmWorkingSent
+attr title "STM sent on working line, last"
+par p2pNetworkExtended.sourceB[0] typename "\"inet.node.sdh.PDHSource\""
+par p2pNetworkExtended.sourceB[0] packetInterval 5e-05s
+attr unit s
+par p2pNetworkExtended.sourceB[0] packetSize 3000
+par p2pNetworkExtended.sourceB[1] typename "\"inet.node.sdh.PDHSource\""
+par p2pNetworkExtended.sourceB[1] packetInterval 5e-05s
+attr unit s
+par p2pNetworkExtended.sourceB[1] packetSize 3000
+par p2pNetworkExtended.sinkB[0] typename "\"inet.node.sdh.PDHSink\""
+par p2pNetworkExtended.sinkB[1] typename "\"inet.node.sdh.PDHSink\""
+par p2pNetworkExtended.lteB typename "\"inet.node.sdh.SDHLTE\""
+par p2pNetworkExtended.lteB stmLevel 16
+par p2pNetworkExtended.lteB numTributaries 2
+par p2pNetworkExtended.lteB useProtection true
+par p2pNetworkExtended.lteB protectionSwitchTime 0.5s
+attr unit s
+scalar p2pNetworkExtended.lteB stmloadSTM:last 0.30864197530864
+attr recordingmode last
+attr source stmloadSTM
+attr title "STM load vector, last"
+scalar p2pNetworkExtended.lteB stmProtectionReceived:last 4000
+attr recordingmode last
+attr source stmProtectionReceived
+attr title "STM received on protection line, last"
+scalar p2pNetworkExtended.lteB stmWorkingReceived:last 3999
+attr recordingmode last
+attr source stmWorkingReceived
+attr title "STM received on working line, last"
+scalar p2pNetworkExtended.lteB stmProtectionSent:last 4001
+attr recordingmode last
+attr source stmProtectionSent
+attr title "STM sent on protection line, last"
+scalar p2pNetworkExtended.lteB stmWorkingSent:last 3999
+attr recordingmode last
+attr source stmWorkingSent
+attr title "STM sent on working line, last"
+par p2pNetworkExtended typename "\"inet.node.sdh.p2pNetworkExtended.p2pNetworkExtended\""
+
