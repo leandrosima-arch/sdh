@@ -1,0 +1,61 @@
+file 618093 1778371905                                          
+version 3
+run SimpleRing_STM4-0-20260510-02:08:53-428
+attr configname SimpleRing_STM4
+attr datetime 20260510-02:08:53
+attr datetimef 20260510-020853
+attr experiment SimpleRing_STM4
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network SimpleRingNetwork
+attr processid 428
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../../../../images
+config *.adm*.stmLevel 4
+config **.packetSize 1000
+config **.packetInterval 100us
+config **.numTributaries 1
+config *.visualizer.*.enabled true
+config *.visualizer.*.animationSpeed 20
+config *.visualizer.*.displayRoutes false
+config *.visualizer.*.displayLabels true
+config *.visualizer.*.displayPacketDrops true
+config *.lteSource.stmLevel 1
+config *.lteSink.stmLevel 1
+config *.lteSource.useProtection false
+config *.lteSink.useProtection false
+config *.source.packetInterval 20us
+config *.source.packetSize 150
+config *.lteSource.protectionSwitchTime -1s
+config *.lteSink.protectionSwitchTime -1s
+config **.scalar-recording true
+config **.vector-recording true
+config **.stmForwarded.record vector
+config **.pdhReceived.record vector
+config **.pdhTransmitted.record vector
+config network SimpleRingNetwork
+config sim-time-limit 1s
+
+vector 0 SimpleRingNetwork.adm1 pdhReceived:vector ETV
+attr recordingmode vector
+attr source pdhReceived
+attr title "PDH packets from tributary"
+vector 1 SimpleRingNetwork.adm2 stmForwarded:vector ETV
+attr recordingmode vector
+attr source stmForwarded
+attr title "STM frames forwarded"
+vector 2 SimpleRingNetwork.adm3 pdhTransmitted:vector ETV
+attr recordingmode vector
+attr source pdhTransmitted
+attr title "PDH packets to tributary"
+0	1803 258683 7 85986 0.000153440329 0.999953440329 9999 1 1 9999 9999
+1	260486 158931 14 85982 0.000252 0.999877 7998 1 1 7998 7998
+2	419417 198674 16 85983 0.000254 0.999879 9998 1 1 9998 9998
+
