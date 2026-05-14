@@ -1,8 +1,8 @@
 version 3
-run General-0-20260509-23:29:05-12892
+run General-0-20260514-11:44:47-1772
 attr configname General
-attr datetime 20260509-23:29:05
-attr datetimef 20260509-232905
+attr datetime 20260514-11:44:47
+attr datetimef 20260514-114447
 attr experiment General
 attr inifile omnetpp.ini
 attr iterationvars ""
@@ -10,12 +10,13 @@ attr iterationvarsd ""
 attr iterationvarsf ""
 attr measurement ""
 attr network p2pNetworkExtended
-attr processid 12892
+attr processid 1772
 attr repetition 0
 attr replication #0
 attr resultdir results
 attr runnumber 0
 attr seedset 0
+config debug-on-errors true
 config image-path ../../../../../images
 config network p2pNetworkExtended
 config sim-time-limit 1s
@@ -100,7 +101,7 @@ par p2pNetworkExtended.lteA numTributaries 2
 par p2pNetworkExtended.lteA useProtection true
 par p2pNetworkExtended.lteA protectionSwitchTime 0.5s
 attr unit s
-scalar p2pNetworkExtended.lteA stmloadSTM:last 0.30864197530864
+scalar p2pNetworkExtended.lteA stmloadSTM:last 0.32051282051282
 attr recordingmode last
 attr source stmloadSTM
 attr title "STM load vector, last"
@@ -136,7 +137,7 @@ par p2pNetworkExtended.lteB numTributaries 2
 par p2pNetworkExtended.lteB useProtection true
 par p2pNetworkExtended.lteB protectionSwitchTime 0.5s
 attr unit s
-scalar p2pNetworkExtended.lteB stmloadSTM:last 0.30864197530864
+scalar p2pNetworkExtended.lteB stmloadSTM:last 0.32051282051282
 attr recordingmode last
 attr source stmloadSTM
 attr title "STM load vector, last"

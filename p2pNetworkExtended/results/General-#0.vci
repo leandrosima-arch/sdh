@@ -1,9 +1,9 @@
-file 1289624 1778747891                                         
-version 2
-run General-0-20260509-23:29:05-12892
+file 1289651 1778751941                                         
+version 3
+run General-0-20260514-11:44:47-1772
 attr configname General
-attr datetime 20260509-23:29:05
-attr datetimef 20260509-232905
+attr datetime 20260514-11:44:47
+attr datetimef 20260514-114447
 attr experiment General
 attr inifile omnetpp.ini
 attr iterationvars ""
@@ -11,12 +11,13 @@ attr iterationvarsd ""
 attr iterationvarsf ""
 attr measurement ""
 attr network p2pNetworkExtended
-attr processid 12892
+attr processid 1772
 attr repetition 0
 attr replication #0
 attr resultdir results
 attr runnumber 0
 attr seedset 0
+config debug-on-errors true
 config image-path ../../../../../images
 config network p2pNetworkExtended
 config sim-time-limit 1s
@@ -37,49 +38,50 @@ vector 0 p2pNetworkExtended.lteA stmloadSTM:vector ETV
 attr recordingmode vector
 attr source stmloadSTM
 attr title "STM load vector"
-0	2580 277620 17 271977 0.000125 1 8000 0.30864197530864 0.46296296296296 3086.2654320987 1238.2592211553
 vector 1 p2pNetworkExtended.lteA stmWorkingSent:vector ETV
 attr recordingmode vector
 attr source stmWorkingSent
 attr title "STM sent on working line"
-1	280200 88051 17 135945 0.000125 0.499875 3999 1 3999 7998000 21325334000
 vector 2 p2pNetworkExtended.lteB stmloadSTM:vector ETV
 attr recordingmode vector
 attr source stmloadSTM
 attr title "STM load vector"
-2	368251 277620 18 271978 0.000125 1 8000 0.30864197530864 0.46296296296296 3086.2654320987 1238.2592211553
 vector 3 p2pNetworkExtended.lteB stmWorkingSent:vector ETV
 attr recordingmode vector
 attr source stmWorkingSent
 attr title "STM sent on working line"
-3	645871 88051 18 135946 0.000125 0.499875 3999 1 3999 7998000 21325334000
 vector 4 p2pNetworkExtended.lteB stmWorkingReceived:vector ETV
 attr recordingmode vector
 attr source stmWorkingReceived
 attr title "STM received on working line"
-4	733922 91602 19 135947 0.000127 0.499877 3999 1 3999 7998000 21325334000
 vector 5 p2pNetworkExtended.lteA stmWorkingReceived:vector ETV
 attr recordingmode vector
 attr source stmWorkingReceived
 attr title "STM received on working line"
-5	825524 91602 20 135948 0.000127 0.499877 3999 1 3999 7998000 21325334000
 vector 6 p2pNetworkExtended.lteA stmProtectionSent:vector ETV
 attr recordingmode vector
 attr source stmProtectionSent
 attr title "STM sent on protection line"
-6	917126 91355 135977 271977 0.5 1 4001 1 4001 8006001 21357342001
 vector 7 p2pNetworkExtended.lteB stmProtectionSent:vector ETV
 attr recordingmode vector
 attr source stmProtectionSent
 attr title "STM sent on protection line"
-7	1008481 91355 135978 271978 0.5 1 4001 1 4001 8006001 21357342001
 vector 8 p2pNetworkExtended.lteB stmProtectionReceived:vector ETV
 attr recordingmode vector
 attr source stmProtectionReceived
 attr title "STM received on protection line"
-8	1099836 94893 135987 271947 0.500002 0.999877 4000 1 4000 8002000 21341334000
 vector 9 p2pNetworkExtended.lteA stmProtectionReceived:vector ETV
 attr recordingmode vector
 attr source stmProtectionReceived
 attr title "STM received on protection line"
-9	1194729 94895 135988 271948 0.500002 0.999877 4000 1 4000 8002000 21341334000
+0	2607 277620 17 271977 0.000125 1 8000 0.32051282051282 0.48076923076923 3204.9679487178 1335.3416748851
+1	280227 88051 17 135945 0.000125 0.499875 3999 1 3999 7998000 21325334000
+2	368278 277620 18 271978 0.000125 1 8000 0.32051282051282 0.48076923076923 3204.9679487178 1335.3416748851
+3	645898 88051 18 135946 0.000125 0.499875 3999 1 3999 7998000 21325334000
+4	733949 91602 19 135947 0.000127 0.499877 3999 1 3999 7998000 21325334000
+5	825551 91602 20 135948 0.000127 0.499877 3999 1 3999 7998000 21325334000
+6	917153 91355 135977 271977 0.5 1 4001 1 4001 8006001 21357342001
+7	1008508 91355 135978 271978 0.5 1 4001 1 4001 8006001 21357342001
+8	1099863 94893 135987 271947 0.500002 0.999877 4000 1 4000 8002000 21341334000
+9	1194756 94893 135988 271948 0.500002 0.999877 4000 1 4000 8002000 21341334000
+

@@ -1,8 +1,8 @@
 version 3
-run STM4-0-20260509-18:54:03-15304
+run STM4-0-20260514-11:15:21-9924
 attr configname STM4
-attr datetime 20260509-18:54:03
-attr datetimef 20260509-185403
+attr datetime 20260514-11:15:21
+attr datetimef 20260514-111521
 attr experiment STM4
 attr inifile omnetpp.ini
 attr iterationvars ""
@@ -10,19 +10,18 @@ attr iterationvarsd ""
 attr iterationvarsf ""
 attr measurement ""
 attr network p2pNetwork
-attr processid 15304
+attr processid 9924
 attr repetition 0
 attr replication #0
 attr resultdir results
 attr runnumber 0
 attr seedset 0
-config debug-on-errors true
 config image-path ../../../../../images
 config *.lteA.stmLevel 4
 config *.lteB.stmLevel 4
 config *.lteA.numTributaries 1
 config *.lteB.numTributaries 1
-config **.packetSize 9720
+config **.packetSize 9360
 config **.packetInterval "41.62 us"
 config network p2pNetwork
 config sim-time-limit 1s

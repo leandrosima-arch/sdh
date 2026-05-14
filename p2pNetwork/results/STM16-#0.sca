@@ -1,8 +1,8 @@
 version 3
-run STM16-0-20260509-18:54:28-15304
+run STM16-0-20260514-12:20:15-7248
 attr configname STM16
-attr datetime 20260509-18:54:28
-attr datetimef 20260509-185428
+attr datetime 20260514-12:20:15
+attr datetimef 20260514-122015
 attr experiment STM16
 attr inifile omnetpp.ini
 attr iterationvars ""
@@ -10,7 +10,7 @@ attr iterationvarsd ""
 attr iterationvarsf ""
 attr measurement ""
 attr network p2pNetwork
-attr processid 15304
+attr processid 7248
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -22,7 +22,7 @@ config *.lteA.stmLevel 16
 config *.lteB.stmLevel 16
 config *.lteA.numTributaries 1
 config *.lteB.numTributaries 1
-config **.packetSize 38880
+config **.packetSize 12480
 config **.packetInterval "41.62 us"
 config *.visualizer.*.enabled true
 config *.visualizer.*.animationSpeed 20
@@ -93,7 +93,7 @@ attr mutable ""
 par p2pNetwork.sourceA typename "\"inet.node.sdh.PDHSource\""
 par p2pNetwork.sourceA packetInterval 4.162e-05s
 attr unit s
-par p2pNetwork.sourceA packetSize 38880
+par p2pNetwork.sourceA packetSize 12480
 par p2pNetwork.sinkA typename "\"inet.node.sdh.PDHSink\""
 par p2pNetwork.lteA typename "\"inet.node.sdh.SDHLTE\""
 par p2pNetwork.lteA stmLevel 16
@@ -110,7 +110,7 @@ attr unit s
 par p2pNetwork.sourceB typename "\"inet.node.sdh.PDHSource\""
 par p2pNetwork.sourceB packetInterval 4.162e-05s
 attr unit s
-par p2pNetwork.sourceB packetSize 38880
+par p2pNetwork.sourceB packetSize 12480
 par p2pNetwork.sinkB typename "\"inet.node.sdh.PDHSink\""
 par p2pNetwork typename "\"inet.node.sdh.p2pNetwork.p2pNetwork\""
 

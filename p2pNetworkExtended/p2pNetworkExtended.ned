@@ -64,7 +64,7 @@ network p2pNetworkExtended
         sourceB[0].out --> lteB.pdhIn++;
         lteB.pdhOut++ --> sinkB[0].in;
         
-        // Conectar fuente 1 y sumidero 1
+        
         sourceB[1].out --> lteB.pdhIn++;
         lteB.pdhOut++ --> sinkB[1].in;
 
