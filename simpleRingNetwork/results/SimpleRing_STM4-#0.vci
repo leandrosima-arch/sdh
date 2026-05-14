@@ -1,5 +1,5 @@
-file 618093 1778371905                                          
-version 3
+file 618093 1778747891                                          
+version 2
 run SimpleRing_STM4-0-20260510-02:08:53-428
 attr configname SimpleRing_STM4
 attr datetime 20260510-02:08:53
@@ -47,15 +47,14 @@ vector 0 SimpleRingNetwork.adm1 pdhReceived:vector ETV
 attr recordingmode vector
 attr source pdhReceived
 attr title "PDH packets from tributary"
+0	1803 258683 7 85986 0.000153440329 0.999953440329 9999 1 1 9999 9999
 vector 1 SimpleRingNetwork.adm2 stmForwarded:vector ETV
 attr recordingmode vector
 attr source stmForwarded
 attr title "STM frames forwarded"
+1	260486 158931 14 85982 0.000252 0.999877 7998 1 1 7998 7998
 vector 2 SimpleRingNetwork.adm3 pdhTransmitted:vector ETV
 attr recordingmode vector
 attr source pdhTransmitted
 attr title "PDH packets to tributary"
-0	1803 258683 7 85986 0.000153440329 0.999953440329 9999 1 1 9999 9999
-1	260486 158931 14 85982 0.000252 0.999877 7998 1 1 7998 7998
-2	419417 198674 16 85983 0.000254 0.999879 9998 1 1 9998 9998
-
+2	419417 198676 16 85983 0.000254 0.999879 9998 1 1 9998 9998

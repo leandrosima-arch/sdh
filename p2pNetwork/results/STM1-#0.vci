@@ -1,5 +1,5 @@
-file 1035672 1778345580                                         
-version 3
+file 1035672 1778747891                                         
+version 2
 run STM1-0-20260509-18:51:31-15304
 attr configname STM1
 attr datetime 20260509-18:51:31
@@ -32,30 +32,29 @@ vector 0 p2pNetwork.lteA stmloadSTM:vector ETV
 attr recordingmode vector
 attr source stmloadSTM
 attr title "STM load vector"
+0	1590 154722 13 144099 0.000125 1 8000 1 1 8000 8000
 vector 1 p2pNetwork.lteA stmWorkingSent:vector ETV
 attr recordingmode vector
 attr source stmWorkingSent
 attr title "STM sent on working line"
+1	156312 177615 13 144099 0.000125 1 8000 1 8000 32004000 170698668000
 vector 2 p2pNetwork.lteB stmloadSTM:vector ETV
 attr recordingmode vector
 attr source stmloadSTM
 attr title "STM load vector"
+2	333927 154722 14 144100 0.000125 1 8000 1 1 8000 8000
 vector 3 p2pNetwork.lteB stmWorkingSent:vector ETV
 attr recordingmode vector
 attr source stmWorkingSent
 attr title "STM sent on working line"
+3	488649 177615 14 144100 0.000125 1 8000 1 8000 32004000 170698668000
 vector 4 p2pNetwork.lteB stmWorkingReceived:vector ETV
 attr recordingmode vector
 attr source stmWorkingReceived
 attr title "STM received on working line"
+4	666264 184703 15 144083 0.000127 0.999877 7999 1 7999 31996000 170634668000
 vector 5 p2pNetwork.lteA stmWorkingReceived:vector ETV
 attr recordingmode vector
 attr source stmWorkingReceived
 attr title "STM received on working line"
-0	1590 154722 13 144099 0.000125 1 8000 1 1 8000 8000
-1	156312 177615 13 144099 0.000125 1 8000 1 8000 32004000 170698668000
-2	333927 154722 14 144100 0.000125 1 8000 1 1 8000 8000
-3	488649 177615 14 144100 0.000125 1 8000 1 8000 32004000 170698668000
-4	666264 184703 15 144083 0.000127 0.999877 7999 1 7999 31996000 170634668000
-5	850967 184703 16 144084 0.000127 0.999877 7999 1 7999 31996000 170634668000
-
+5	850967 184705 16 144084 0.000127 0.999877 7999 1 7999 31996000 170634668000

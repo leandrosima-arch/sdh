@@ -55,7 +55,7 @@ void SDHLTE::handleMessage(cMessage *msg) {
             auto *frame = new SDHFrame("STM-Frame");
             frame->setStmLevel(stmLevel);
 
-            int maxBytes = 2430 * stmLevel;
+            int maxBytes = 2340 * stmLevel;
             int usedBytes = 0;
 
             auto *vc = new SDHVirtualContainer("VC4");
